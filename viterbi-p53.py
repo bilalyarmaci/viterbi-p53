@@ -53,6 +53,9 @@ def viterbi_p53(sequence):
 # örnek P53 DNA dizisi
 p53_sequence = "ATGCGTCTC"
 
-# Viterbi Algoritması uygulaması
+# VİTERBİ ALGORİTMASI UYGULAMASI
+i_type = int(input("Kendi DNA dizinizi girmek için '1', örnek sekans için '0' giriniz: ").strip())
+if(i_type):
+    p53_sequence = input("DNA dizisi: ")
 result = viterbi_p53(p53_sequence)
 print("En olası durum serisi:", result)
